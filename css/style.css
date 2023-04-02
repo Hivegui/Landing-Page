@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+/*background da tela e estilo da foto de perfil*/
+img{
+  background-color: #ffffff;
+  border-radius: 70%;
+  height: 200px; /*tamanho da foto*/
+  width: 200px; /*tamanho da foto*/
+}
+
+.header-info {
+    display: inline-block;
+    margin-top: 30px;
+    text-align: center;
+    
+}
+
+/*posição do bloco superior*/
+.bloco {
+    position: relative;
+    display: block;
+    background-color: #000;
+    height: 205px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.logo {
+    width: 20%;
+    float: left;
+    margin-top: 3px;
+}
+
+body {
+    background-color: #757575;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+p1 {
+    font-family: 'Rubik', sans-serif;
+}
+
+/*Nome*/
+.header-info h1 {
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+    font-size: 35px;
+    text-align: center;
+    color: #ffffff;
+}
+
+h2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.17em;
+    background: #aaa8a7;
+}
+
+/*obj, formaçao, curso, linguas, conhecimentos - cor da tag */
+h3 {
+    font-family: 'Rubik', sans-serif;
+    background: #aaa8a7;
+    padding: 7px;
+}
+
+/*Imagens cel,email,local,git*/
+[class="mini-fotos"] img {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 10px;
+    height: 45px;
+    width: 45px;
+}
+
+/*diminui as mini-fotos / flex deixa os icones em fileira pra baixo*/
+[class="mini-fotos"] li {
+    display: inline-flex;
+    margin-top: 5px;
+    margin-right: 75px;
+}
+
+.container {
+    font-family: 'Rubik', sans-serif;
+}
+
+ul {
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+}
+
+li address {
+    padding-top: 20px;
+    width: 400px;
+    padding-left: 20px;
+}
+
+li p {
+    padding-left: 18px;
+    padding-top: 3px;
+}
+
+.class-titulos {
+    font-family: 'Rubik', sans-serif;
+    color: #000;
+    height: 15px;
+}
+
+/*adress contato, git, cel*/
+address {
+    font-family: 'Rubik', sans-serif;
+    color: #000000;
+    text-align: center;
+    margin-right: 120px;
+    margin-top: 20px;
+    width: 100%;
+}
+@media screen and (max-width: 1215px) {
+    [class="mini-fotos"] li {
+        margin-right: 35px;
+    }
+}
+
+/*media queries para responsividade na pagina*/
+@media screen and (max-width: 995px) {
+    .bloco {
+        height: 425px;
+    }
+    address {
+        text-align: left;
+    }
+    .logo {
+        width: 100%;
+        height: 180px;
+        padding-top: 20px;
+    }
+    .header-info {
+        width: 100%;
+    }
+    [class="mini-fotos"] li {
+        /*display: block;*/
+        margin-right: 35px;
+    }
+    [class="mini-fotos"] {
+        padding-right: 0px !important;
+        
+    }
+}
+
+@media screen and (max-width: 515px) {
+    .bloco {
+        height: 500px;
+    }
+    
+    .item input:checked ~ ul {
+        height: 540px !important;
+        max-height: 540px !important;
+        text-align: justify;
+    }
+}
+
+.mini-fotos a {
+    color: #000;
+}
+
+/*tamanho do bloco sobre*/
+nav {
+    width: auto;
+    height: auto;
+    font-family: 'Rubik', sans-serif;
+    margin: 40px auto;
+}
+
+.item label {
+    display: block;
+    padding: 7px;
+    font-size: 1.17em;
+    background-color: #aaa8a7;
+    cursor: pointer;
+    color:#000;
+    margin-top: 80px;
+}
+
+/*cor do hover*/
+.item label:hover {
+    background-color: #ffffff;
+}
+
+.item ul {
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+    max-height: 0;
+    transition: all .3s linear;
+}
+
+.item ul p {
+    width: 90%;
+    height: 90px;
+    text-decoration: none;
+    background-color: #757575;
+    color: #000;
+    font-size: 1.17em;
+}
+
+.item input:checked ~ ul {
+    height: auto;
+    max-height: 200px;
+}
+
+.item input {
+    display: none;
+}
